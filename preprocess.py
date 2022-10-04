@@ -5,6 +5,8 @@ df = pd.read_csv("cfdna_dataset.csv")
 del df["Patient"]
 del df["Timepoint"]
 df = df.replace(["Y","N"],[1,0])
+
+
 #df['Patient Type'] = 1
 
 df = df.replace(["Healthy"],[0])
